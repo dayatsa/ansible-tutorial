@@ -1,0 +1,11 @@
+- name: Playbook to Install Packages
+  hosts:
+  tasks:
+  - name: delete file
+      shell:
+        cmd: sshpass -p 'external' ssh skes@192.168.0.9
+  tasks:
+  - name: create file
+      shell:
+        cmd: touch val.txt
+
